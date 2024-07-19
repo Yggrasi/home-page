@@ -1,16 +1,42 @@
+html {
+    animation: fadeIn ease-out 2s, slideIn ease-out 1.5s;
+    background-color: #f0f0f0; /* Optional: Tambahkan latar belakang untuk efek yang lebih halus */
+}
 
-// html {
-//     animation: fadeIn ease 3s;
-// }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-// @keyframes fadeIn {
-//     0% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Efek geser dari bawah */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+body {
+    animation: fadeInBackground ease-out 2s;
+}
+
+@keyframes fadeInBackground {
+    0% {
+        background-color: #e0e0e0; /* Warna latar belakang awal */
+    }
+    100% {
+        background-color: #f0f0f0; /* Warna latar belakang akhir */
+    }
+}
+
+
 
 
 // .wrap{
@@ -209,4 +235,21 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(14px);
+}
+
+
+@media only screen and (max-width: 741px) {
+    .sambutan h1{
+        font-size: 5rem;
+    }
+    .tab{
+        width: 150px;
+    }
+    .tab-tail{
+        gap: 10px;
+        padding: 10px;
+    }
+    .icon{
+        font-size: 4rem;
+    }
 }
