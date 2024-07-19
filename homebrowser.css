@@ -76,11 +76,16 @@ nav a:hover {
   justify-content: center;
 }
 
+.side {
+  display: flex;
+  gap: 10px;
+}
+
 .icon {
   font-size: 5rem;
 }
 
-.award {
+.award, .settings {
   font-size: 2rem;
 }
 
