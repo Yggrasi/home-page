@@ -16,3 +16,11 @@ function updateTime() {
 // Update the time every second
 setInterval(updateTime, 1000);
 updateTime();
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Tampilkan tanggal
+    const dateElement = document.getElementById('date');
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = now.toLocaleDateString('id-ID', options);
+});
