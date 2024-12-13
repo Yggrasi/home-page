@@ -1,26 +1,31 @@
-/* Animasi Goyang */
-@keyframes shake {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-10px);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    75% {
-        transform: translateX(-10px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+@keyframes wiggle {
+                0%, 100% {
+                    transform: rotate(0deg);
+                }
+                25% {
+                    transform: rotate(10deg);
+                }
+                75% {
+                    transform: rotate(-10deg);
+                }
+            }
 
-/* Efek Goyang pada ikon ketika hover */
-.icon:hover {
-    animation: shake 0.5s ease-in-out infinite;
-}
+            /* Animasi melompat */
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            /* Terapkan animasi ke ikon */
+            .animated-icon {
+                animation: bounce 2s infinite; /* Default animasi */
+                display: inline-block;
+                transition: transform 0.2s;
+            }
 
 @keyframes gradientBackground {
     0% {
