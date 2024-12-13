@@ -145,6 +145,9 @@ nav a:hover {
     color: #e0b3ff;
 }
 
+.icon:hover {
+    color: white;
+}
 .award, .settings {
     font-size: 2rem;
     color: #FFFFFF;
