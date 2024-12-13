@@ -143,11 +143,41 @@ nav a:hover {
 .icon {
     font-size: 3rem;
     color: #e0b3ff;
+    transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
+    animation: bounce 2s infinite;
 }
 
 .icon:hover {
+    transform: scale(1.2) rotate(10deg);
     color: white;
+    text-shadow: 0px 0px 10px #e0b3ff, 0px 0px 20px #ffffff;
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(224, 179, 255, 0.1), rgba(255, 255, 255, 0.05));
+    transition: background 0.3s, transform 0.3s;
+}
+
+.icon-container:hover {
+    background: linear-gradient(135deg, rgba(224, 179, 255, 0.3), rgba(255, 255, 255, 0.1));
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgba(224, 179, 255, 0.5);
+}
+
 .award, .settings {
     font-size: 2rem;
     color: #FFFFFF;
