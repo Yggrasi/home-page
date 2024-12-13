@@ -1,3 +1,27 @@
+/* Animasi Goyang */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Efek Goyang pada ikon ketika hover */
+.icon:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
 @keyframes gradientBackground {
     0% {
         background-position: 0% 50%;
