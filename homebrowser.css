@@ -108,6 +108,7 @@ nav a:hover {
     font-size: 10rem;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     color: #e0b3ff;
+    margin-bottom: 20px;
 }
 
 .container {
